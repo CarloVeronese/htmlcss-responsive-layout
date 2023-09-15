@@ -19,6 +19,7 @@ menu {
 
 img {
     width: 100%;
+    display: block;
 }
 
 figure img{
@@ -31,6 +32,10 @@ a {
     display: inline-block;
 }
 
+[class^="col"]{
+    padding: 0 12px;
+}
+
 /* COLORS PALETTE */
 
 :root {
@@ -38,6 +43,7 @@ a {
     --light-blue:#B5DDFF;
     --purple:#9792E4;
     --yellow:#FDC15F;
+    --grey: #5D7284;
     --dark-grey:#333333;
     --light:#FFFFFF;
 
@@ -69,8 +75,16 @@ a {
     flex-basis: calc((100% / 12) * 4);
 }
 
+.col-5 {
+    flex-basis: calc((100% / 12) * 5);
+}
+
 .col-6 {
     flex-basis: calc((100% / 12) * 6);
+}
+
+.col-7 {
+    flex-basis: calc((100% / 12) * 7);
 }
 
 .col-8 {
@@ -94,6 +108,10 @@ a {
     color: white;
 }
 
+.icon-blue{
+    color: var(--blue);
+}
+
 
 /* COMPONENT CLASSES */
 
@@ -107,6 +125,7 @@ a {
 }
 
 /* HEADER */
+
 .page-header {
     background-color: var(--blue);
     padding: 10px 0;
@@ -124,6 +143,67 @@ a {
 
 .hamburger-menu{
     display: none;
+}
+
+/* MAIN */
+
+main{
+    padding-top: 50px;
+}
+
+/* CARDS */
+
+.card-container{
+    row-gap: 25px;
+}
+
+.card{
+    background-color: var(--light-blue);
+    padding: 40px 20px 0px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+[class^="card"]{
+    font-weight: 800;
+}
+
+.card-title h2{
+    color: var(--blue);
+    line-height: 20px;
+    font-size: 24px;
+}
+
+.card-paragraph{
+    color: var(--grey);    
+    padding: 35px 0;
+    line-height: 30px;
+}
+
+.card-button{
+    display: inline-block;
+    background-color: var(--blue);
+    color: white;
+    padding: 0 50px;
+    line-height: 45px;
+}
+
+.card-button i{
+    padding-right: 8px;
+}
+
+.col-4 .card{
+    text-align: center;
+}
+
+.card-icon i{
+    font-size: 80px;
+    padding-bottom: 30px;
+}
+
+.image-flex{
+    display: flex;
+    align-items: flex-end;
 }
 
 /* MEDIA QUERIES*/
