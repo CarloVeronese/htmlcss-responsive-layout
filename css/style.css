@@ -218,6 +218,13 @@ main{
     .hamburger-menu{
         display: block;
     }
+    .hero .row{
+        flex-direction: column;
+    }
+    .image-flex img{
+        width: 100%;
+        padding-top: 35px;
+    }
 }
 
 @media (min-width: 768px){
@@ -249,6 +256,9 @@ main{
     }
     .hamburger-menu{
         display: none;
+    }
+    .hero .row{
+        flex-direction: row;
     }
     .card .col-7{
         flex-basis: calc((100% / 12) * 7);
