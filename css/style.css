@@ -506,7 +506,8 @@ main{
         padding-top: 35px;
     }
     /* PLANNING */
-    .container-small{
+    .container-small,
+    .container-medium{
         max-width: 337px;
     }
     .planning .row{
@@ -542,6 +543,13 @@ main{
     .benefits-title{
         font-size: 30px;
     }
+    #about-us .row{
+        flex-wrap: wrap;
+    }
+    .about-us-picture-container i{
+        right: 60px;
+    }
+
 }
 
 @media (min-width: 768px){
@@ -596,6 +604,16 @@ main{
     }
     .benefits-title{
         font-size: 40px;
+    }
+    /* ABOUT US */
+    .container-medium{
+        max-width: 706px;
+    }
+    #about-us .row{
+        flex-wrap: nowrap;
+    }
+    .about-us-picture-container i{
+        right: 0px;
     }
 }
 
