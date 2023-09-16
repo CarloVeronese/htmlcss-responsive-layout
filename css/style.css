@@ -10,6 +10,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 ul,
 ol,
 menu {
@@ -41,7 +43,7 @@ a {
 :root {
     --blue:#0084FD;
     --light-blue:#B5DDFF;
-    --purple:#9792E4;
+    --purple:#9792E4; 
     --yellow:#FDC15F;
     --grey: #5D7284;
     --dark-grey:#333333;
@@ -112,6 +114,10 @@ a {
     color: var(--blue);
 }
 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
 
 /* COMPONENT CLASSES */
 
@@ -126,7 +132,7 @@ a {
 
 /* HEADER */
 
-.page-header {
+#page-header {
     background-color: var(--blue);
     padding: 10px 0;
 }
@@ -151,7 +157,13 @@ main{
     padding-top: 50px;
 }
 
-/* CARDS */
+/* MAIN - HERO*/
+
+.hero{
+    padding-bottom: 100px;
+}
+
+/* MAIN - HERO - CARDS */
 
 .card-container{
     row-gap: 25px;
@@ -206,6 +218,72 @@ main{
     align-items: flex-end;
 }
 
+/* MAIN - PLANNING */
+
+.planning{
+    background-color: var(--purple);
+    color: white;
+    padding: 124px 0 62px;
+}
+
+.strategic img{
+    padding-bottom: 130px;
+}
+
+.planning-title{
+    padding-bottom: 55px;
+}
+
+.app-dev-container{
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.app-dev{
+    text-align: center;
+    color: black;
+    font-family: 'Inclusive Sans', sans-serif;
+    background-color: white;
+    border-radius: 43px;
+}
+
+.app-dev h2{
+    color: black;
+    font-weight: 800;
+}
+
+.app-dev p{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 30px 0;
+}
+
+.app-dev figure{
+    padding: 30px 94px;
+}
+
+.app-dev-content{
+    padding: 0 40px;
+    line-height: 30px;
+}
+
+.app-dev-end{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.arrow-down{
+    background-color: var(--purple);
+    width: 50px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MEDIA QUERIES*/
 
 @media (min-width: 576px){
@@ -225,9 +303,18 @@ main{
         width: 100%;
         padding-top: 35px;
     }
+    /* PLANNING */
+        /* PLANNING */
+    .planning .row{
+        row-gap: 36px;
+    }
+    .planning .col-6{
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 768px){
+    /* HEADER */
     .container{
         max-width: 750px;
     }
@@ -237,6 +324,7 @@ main{
     .hamburger-menu{
         display: block;
     }
+    /* CARDS */
     .card .col-7,
     .card .col-5{
         flex-basis: 100%;
@@ -245,9 +333,17 @@ main{
         width: 50%;
         padding-top: 35px;
     }
+    /* PLANNING */
+    .planning .row{
+        row-gap: 36px;
+    }
+    .planning .col-6{
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 992px){
+    /* HEADER */
     .container{
         max-width: 1164px;
     }
@@ -260,6 +356,7 @@ main{
     .hero .row{
         flex-direction: row;
     }
+    /* CARDS */
     .card .col-7{
         flex-basis: calc((100% / 12) * 7);
     }
@@ -269,6 +366,10 @@ main{
     .image-flex img{
         width: 100%;
         padding-top: 0px;
+    }
+    /* PLANNING */
+    .planning .col-6{
+        flex-basis: calc((100% / 12) * 6);
     }
 }
 
