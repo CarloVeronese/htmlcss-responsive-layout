@@ -120,6 +120,10 @@ a {
     color: var(--blue);
 }
 
+.icon-purple{
+    color: var(--purple);
+}
+
 .flex-col{
     display: flex;
     flex-direction: column;
@@ -414,6 +418,71 @@ main{
     color: white;
     width: 50%;
     font-weight: 600;
+}
+
+/* ABOUT US */
+
+#about-us{
+    padding: 90px 0;
+}
+
+#about-us .row{
+    gap: 60px;
+}
+
+.about-us-title{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.about-us-paragraph{
+    color: #292929;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.about-us-paragraph div:first-child{
+    padding: 60px 0;
+}
+
+.about-us-picture{
+    border-radius: 50%;
+    width: 246px;
+}
+
+.about-us-profile h3{
+    color: var(--purple);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34px;
+    padding: 30px 0;
+}
+
+#about-us .button{
+    background-color: var(--purple);
+    color: white;
+    line-height: 30px;
+    width: fit-content;
+    font-size: 14px;
+}
+
+.button i{
+    padding-right: 10px;
+}
+
+.about-us-picture-container{
+    position: relative;
+}
+
+
+.about-us-picture-container i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 80px;
 }
 
 /* MEDIA QUERIES*/
